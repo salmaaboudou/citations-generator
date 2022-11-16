@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    height: 100vh;
+    background: linear-gradient(336deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&display=swap');
+
+.main-container{
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    border:none;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.citation-container{
+    font-family: 'Pacifico', cursive;
+    font-size: 32px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+}
+
+.separator{
+    width: 150px;
+    height: 5px;
+    background-color: rgb(86, 86, 86);
+    margin-top: 40px;
+}
+
+.author-name{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+button{
+    width: 50%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin-top: 30px;
+    padding: 20px 0 20px 0 ;
+    border: none;
+    border-radius: 3px;
+    background: hotpink;
+    font-weight: bold;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+button:hover{
+    background-color: rgb(253, 124, 189);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+    .main-container{
+        width: 70%;
+        height: 40%;
+        padding: 10px;
+    }
+
+    .citation{
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .citation-container{
+        padding: 20px;
+    }
+
+    .separator{
+       width: 100px;
+       height: 1px;
+       margin-top: 20px;
+    }
+
+    .author-name{
+        font-size: 12px;
+    }
+
+    button{
+        width: 70%;
+        font-size: 14px;
+    }
+}
